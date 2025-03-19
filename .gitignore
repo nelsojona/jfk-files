@@ -1,0 +1,111 @@
+###############################################################################
+# Python
+###############################################################################
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+pytest_cache/
+coverage.xml
+*.cover
+
+###############################################################################
+# Environment and IDE
+###############################################################################
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.envrc
+jfk-env-py310/
+.conda-env
+
+###############################################################################
+# Project specific ignores
+###############################################################################
+# Logs
+logs/*
+!logs/.gitkeep
+jfk_scraper.log
+jfk_scraper_errors.log
+
+# Checkpoints and caching
+.checkpoints/
+__pycache__/
+.cache/
+
+# Performance data
+performance_metrics/
+metrics/charts/*
+!metrics/charts/.gitkeep
+
+# GPT related files
+data/lite_llm/gpt_instructions.md
+data/lite_llm/consolidated_jfk_files.json
+
+###############################################################################
+# Build and distribution
+###############################################################################
+dist/
+build/
+*.egg-info/
+
+###############################################################################
+# Security and sensitive files
+###############################################################################
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.der
+openai_api_key.txt
+gpt_api_key.txt
+
+###############################################################################
+# Temporary files
+###############################################################################
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.log
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# Generated temporary output files
+temp*/

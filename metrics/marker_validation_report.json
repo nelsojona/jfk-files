@@ -1,0 +1,46 @@
+{
+  "docid-32204484.pdf": {
+    "quality_score": 91.42857142857143,
+    "validation_results": {
+      "has_content": true,
+      "has_headers": true,
+      "has_paragraphs": true,
+      "structural_integrity": true,
+      "header_hierarchy": false,
+      "content_integrity": true,
+      "table_structure": true,
+      "list_formatting": true,
+      "ocr_quality": true,
+      "image_references": true,
+      "document_structure": true
+    },
+    "metrics": {
+      "num_headers": 8,
+      "num_paragraphs": 17,
+      "avg_paragraph_length": 4.235294117647059,
+      "markdown_file_size": 104
+    }
+  },
+  "104-10004-10143 C06932208.pdf": {
+    "quality_score": 100.0,
+    "validation_results": {
+      "has_content": true,
+      "has_headers": true,
+      "has_paragraphs": true,
+      "structural_integrity": true,
+      "header_hierarchy": true,
+      "content_integrity": true,
+      "table_structure": true,
+      "list_formatting": true,
+      "ocr_quality": true,
+      "image_references": true,
+      "document_structure": true
+    },
+    "metrics": {
+      "num_headers": 3,
+      "num_paragraphs": 5,
+      "avg_paragraph_length": 45.8,
+      "markdown_file_size": 237
+    }
+  }
+}

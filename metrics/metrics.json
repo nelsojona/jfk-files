@@ -1,0 +1,67 @@
+{
+  "timestamp": "2025-03-18 23:43:45",
+  "runtime": {
+    "seconds": 10.516175031661987,
+    "formatted": "0h 0m 10s"
+  },
+  "system": {
+    "cpu": {
+      "current": 81.3,
+      "average": 34.13333333333333,
+      "maximum": 81.3
+    },
+    "memory": {
+      "current": 55.5,
+      "average": 55.5,
+      "maximum": 55.5,
+      "total_gb": 64.0
+    },
+    "disk_io": {
+      "read_mb": 164.40234375,
+      "write_mb": 7.78515625
+    },
+    "network_io": {
+      "sent_mb": 0.021484375,
+      "received_mb": 0.0302734375
+    }
+  },
+  "application": {
+    "files": {
+      "processed": 0,
+      "successful": 0,
+      "failed": 0
+    },
+    "rates": {
+      "current": 0.0,
+      "average": 0.0,
+      "maximum": 0.0
+    },
+    "success_rate": 0.0,
+    "error_counts": {
+      "scraping": 0,
+      "download": 0,
+      "pdf_to_markdown": 0,
+      "markdown_to_json": 0,
+      "storage": 0,
+      "checkpoint": 0,
+      "general": 0
+    }
+  },
+  "charts": {
+    "system_resources": "charts/system_resources_20250318234345.png",
+    "processing_metrics": "charts/processing_metrics_20250318234345.png",
+    "io_metrics": "charts/io_metrics_20250318234345.png"
+  },
+  "recommendations": [
+    {
+      "category": "CPU",
+      "severity": "medium",
+      "message": "CPU usage occasionally spikes. Consider using adaptive throttling to manage peak loads."
+    },
+    {
+      "category": "Performance",
+      "severity": "medium",
+      "message": "Processing rate is low. Consider optimizing file processing pipeline or increasing parallelism if resources permit."
+    }
+  ]
+}

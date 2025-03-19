@@ -1,0 +1,27 @@
+=== Marker Diagnostic Results ===
+
+System: Darwin 24.3.0 (arm64)
+Python: 3.10.13 ✅
+
+Packages:
+- torch: ✅
+- fitz: ✅
+- numpy: ✅
+- PIL: ✅
+- pytesseract: ✅
+- PyMuPDF: ✅
+
+Marker: ❌ Not loaded
+Safer Marker Wrapper: ✅ Available
+Tesseract OCR: ✅ tesseract 5.5.0
+GPU Support: ❌ Not available
+
+Overall Status: ✅ Ready to use
+Note: Using PyMuPDF fallback method (Marker library not available)
+marker-pdf v1.6.1 is installed but not loading correctly
+Issue detected: Python modules missing from installation
+Missing: marker, marker_pdf, marker/api.py, marker_pdf/api.py
+Try the following fixes:
+1. pip install --force-reinstall marker-pdf
+2. For Mac users on M1/M2/M3: pip install marker-pdf==0.1.0
+3. Check installation: pip show marker-pdf

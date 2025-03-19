@@ -1,0 +1,50 @@
+name: Python Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10"]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y tesseract-ocr poppler-utils
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f config/requirements.txt ]; then pip install -r config/requirements.txt; fi
+        pip install pytest pytest-cov
+    - name: Test with pytest
+      env:
+        # Set CI environment variable explicitly
+        CI: "true"
+        # Use placeholder OpenAI API key
+        OPENAI_API_KEY: "dummy-key-for-testing-only"
+      run: |
+        # Create test_output directory
+        mkdir -p test_output
+        
+        # Run basic import tests only
+        python -c "import src.utils.pdf2md.pdf2md; print('Module imports successfully')"
+        
+        # Run only basic tests that are ready to run in CI
+        # Just test that the package structure works
+        python -m pytest tests/test_imports.py -v
+        
+        # Skip other tests in CI for now until we have proper mocks configured
+        # Once ready, add the following to run more tests:
+        # python -m pytest tests/ -k "not (api or ocr or openai)" --cov=src/ -v

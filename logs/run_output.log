@@ -1,0 +1,232 @@
+Activating Python 3.10 environment...
+Checking OCR dependencies...
+- PyMuPDF available (version 1.25.4)
+- Marker PDF not available: No module named 'marker_pdf'
+Attempting to install marker-pdf...
+Requirement already satisfied: marker-pdf in ./jfk-env-py310/lib/python3.10/site-packages (1.6.1)
+Requirement already satisfied: Pillow<11.0.0,>=10.1.0 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (10.4.0)
+Requirement already satisfied: anthropic<0.47.0,>=0.46.0 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (0.46.0)
+Requirement already satisfied: click<9.0.0,>=8.1.7 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (8.1.8)
+Requirement already satisfied: filetype<2.0.0,>=1.2.0 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (1.2.0)
+Requirement already satisfied: ftfy<7.0.0,>=6.1.1 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (6.3.1)
+Requirement already satisfied: google-genai<2.0.0,>=1.0.0 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (1.7.0)
+Requirement already satisfied: markdown2<3.0.0,>=2.5.2 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (2.5.3)
+Requirement already satisfied: markdownify<0.14.0,>=0.13.1 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (0.13.1)
+Requirement already satisfied: pdftext<0.7.0,>=0.6.2 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (0.6.2)
+Requirement already satisfied: pydantic<3.0.0,>=2.4.2 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (2.10.6)
+Requirement already satisfied: pydantic-settings<3.0.0,>=2.0.3 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (2.8.1)
+Requirement already satisfied: python-dotenv<2.0.0,>=1.0.0 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (1.0.1)
+Requirement already satisfied: rapidfuzz<4.0.0,>=3.8.1 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (3.12.2)
+Requirement already satisfied: regex<2025.0.0,>=2024.4.28 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (2024.11.6)
+Requirement already satisfied: scikit-learn<2.0.0,>=1.6.1 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (1.6.1)
+Requirement already satisfied: surya-ocr<0.14.0,>=0.13.0 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (0.13.0)
+Requirement already satisfied: torch<3.0.0,>=2.5.1 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (2.6.0)
+Requirement already satisfied: tqdm<5.0.0,>=4.66.1 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (4.67.1)
+Requirement already satisfied: transformers<5.0.0,>=4.45.2 in ./jfk-env-py310/lib/python3.10/site-packages (from marker-pdf) (4.49.0)
+Requirement already satisfied: anyio<5,>=3.5.0 in ./jfk-env-py310/lib/python3.10/site-packages (from anthropic<0.47.0,>=0.46.0->marker-pdf) (4.9.0)
+Requirement already satisfied: distro<2,>=1.7.0 in ./jfk-env-py310/lib/python3.10/site-packages (from anthropic<0.47.0,>=0.46.0->marker-pdf) (1.9.0)
+Requirement already satisfied: httpx<1,>=0.23.0 in ./jfk-env-py310/lib/python3.10/site-packages (from anthropic<0.47.0,>=0.46.0->marker-pdf) (0.28.1)
+Requirement already satisfied: jiter<1,>=0.4.0 in ./jfk-env-py310/lib/python3.10/site-packages (from anthropic<0.47.0,>=0.46.0->marker-pdf) (0.9.0)
+Requirement already satisfied: sniffio in ./jfk-env-py310/lib/python3.10/site-packages (from anthropic<0.47.0,>=0.46.0->marker-pdf) (1.3.1)
+Requirement already satisfied: typing-extensions<5,>=4.10 in ./jfk-env-py310/lib/python3.10/site-packages (from anthropic<0.47.0,>=0.46.0->marker-pdf) (4.12.2)
+Requirement already satisfied: wcwidth in ./jfk-env-py310/lib/python3.10/site-packages (from ftfy<7.0.0,>=6.1.1->marker-pdf) (0.2.13)
+Requirement already satisfied: google-auth<3.0.0,>=2.14.1 in ./jfk-env-py310/lib/python3.10/site-packages (from google-genai<2.0.0,>=1.0.0->marker-pdf) (2.38.0)
+Requirement already satisfied: requests<3.0.0,>=2.28.1 in ./jfk-env-py310/lib/python3.10/site-packages (from google-genai<2.0.0,>=1.0.0->marker-pdf) (2.32.3)
+Requirement already satisfied: websockets<15.1.0,>=13.0.0 in ./jfk-env-py310/lib/python3.10/site-packages (from google-genai<2.0.0,>=1.0.0->marker-pdf) (15.0.1)
+Requirement already satisfied: beautifulsoup4<5,>=4.9 in ./jfk-env-py310/lib/python3.10/site-packages (from markdownify<0.14.0,>=0.13.1->marker-pdf) (4.13.3)
+Requirement already satisfied: six<2,>=1.15 in ./jfk-env-py310/lib/python3.10/site-packages (from markdownify<0.14.0,>=0.13.1->marker-pdf) (1.17.0)
+Requirement already satisfied: pypdfium2==4.30.0 in ./jfk-env-py310/lib/python3.10/site-packages (from pdftext<0.7.0,>=0.6.2->marker-pdf) (4.30.0)
+Requirement already satisfied: annotated-types>=0.6.0 in ./jfk-env-py310/lib/python3.10/site-packages (from pydantic<3.0.0,>=2.4.2->marker-pdf) (0.7.0)
+Requirement already satisfied: pydantic-core==2.27.2 in ./jfk-env-py310/lib/python3.10/site-packages (from pydantic<3.0.0,>=2.4.2->marker-pdf) (2.27.2)
+Requirement already satisfied: numpy>=1.19.5 in ./jfk-env-py310/lib/python3.10/site-packages (from scikit-learn<2.0.0,>=1.6.1->marker-pdf) (2.2.4)
+Requirement already satisfied: scipy>=1.6.0 in ./jfk-env-py310/lib/python3.10/site-packages (from scikit-learn<2.0.0,>=1.6.1->marker-pdf) (1.15.2)
+Requirement already satisfied: joblib>=1.2.0 in ./jfk-env-py310/lib/python3.10/site-packages (from scikit-learn<2.0.0,>=1.6.1->marker-pdf) (1.4.2)
+Requirement already satisfied: threadpoolctl>=3.1.0 in ./jfk-env-py310/lib/python3.10/site-packages (from scikit-learn<2.0.0,>=1.6.1->marker-pdf) (3.6.0)
+Requirement already satisfied: opencv-python-headless<5.0.0.0,>=4.11.0.86 in ./jfk-env-py310/lib/python3.10/site-packages (from surya-ocr<0.14.0,>=0.13.0->marker-pdf) (4.11.0.86)
+Requirement already satisfied: platformdirs<5.0.0,>=4.3.6 in ./jfk-env-py310/lib/python3.10/site-packages (from surya-ocr<0.14.0,>=0.13.0->marker-pdf) (4.3.6)
+Requirement already satisfied: filelock in ./jfk-env-py310/lib/python3.10/site-packages (from torch<3.0.0,>=2.5.1->marker-pdf) (3.18.0)
+Requirement already satisfied: networkx in ./jfk-env-py310/lib/python3.10/site-packages (from torch<3.0.0,>=2.5.1->marker-pdf) (3.4.2)
+Requirement already satisfied: jinja2 in ./jfk-env-py310/lib/python3.10/site-packages (from torch<3.0.0,>=2.5.1->marker-pdf) (3.0.0)
+Requirement already satisfied: fsspec in ./jfk-env-py310/lib/python3.10/site-packages (from torch<3.0.0,>=2.5.1->marker-pdf) (2025.3.0)
+Requirement already satisfied: sympy==1.13.1 in ./jfk-env-py310/lib/python3.10/site-packages (from torch<3.0.0,>=2.5.1->marker-pdf) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in ./jfk-env-py310/lib/python3.10/site-packages (from sympy==1.13.1->torch<3.0.0,>=2.5.1->marker-pdf) (1.3.0)
+Requirement already satisfied: huggingface-hub<1.0,>=0.26.0 in ./jfk-env-py310/lib/python3.10/site-packages (from transformers<5.0.0,>=4.45.2->marker-pdf) (0.29.3)
+Requirement already satisfied: packaging>=20.0 in ./jfk-env-py310/lib/python3.10/site-packages (from transformers<5.0.0,>=4.45.2->marker-pdf) (24.2)
+Requirement already satisfied: pyyaml>=5.1 in ./jfk-env-py310/lib/python3.10/site-packages (from transformers<5.0.0,>=4.45.2->marker-pdf) (6.0.2)
+Requirement already satisfied: tokenizers<0.22,>=0.21 in ./jfk-env-py310/lib/python3.10/site-packages (from transformers<5.0.0,>=4.45.2->marker-pdf) (0.21.1)
+Requirement already satisfied: safetensors>=0.4.1 in ./jfk-env-py310/lib/python3.10/site-packages (from transformers<5.0.0,>=4.45.2->marker-pdf) (0.5.3)
+Requirement already satisfied: exceptiongroup>=1.0.2 in ./jfk-env-py310/lib/python3.10/site-packages (from anyio<5,>=3.5.0->anthropic<0.47.0,>=0.46.0->marker-pdf) (1.2.2)
+Requirement already satisfied: idna>=2.8 in ./jfk-env-py310/lib/python3.10/site-packages (from anyio<5,>=3.5.0->anthropic<0.47.0,>=0.46.0->marker-pdf) (2.10)
+Requirement already satisfied: soupsieve>1.2 in ./jfk-env-py310/lib/python3.10/site-packages (from beautifulsoup4<5,>=4.9->markdownify<0.14.0,>=0.13.1->marker-pdf) (2.6)
+Requirement already satisfied: cachetools<6.0,>=2.0.0 in ./jfk-env-py310/lib/python3.10/site-packages (from google-auth<3.0.0,>=2.14.1->google-genai<2.0.0,>=1.0.0->marker-pdf) (5.5.2)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in ./jfk-env-py310/lib/python3.10/site-packages (from google-auth<3.0.0,>=2.14.1->google-genai<2.0.0,>=1.0.0->marker-pdf) (0.4.1)
+Requirement already satisfied: rsa<5,>=3.1.4 in ./jfk-env-py310/lib/python3.10/site-packages (from google-auth<3.0.0,>=2.14.1->google-genai<2.0.0,>=1.0.0->marker-pdf) (4.9)
+Requirement already satisfied: certifi in ./jfk-env-py310/lib/python3.10/site-packages (from httpx<1,>=0.23.0->anthropic<0.47.0,>=0.46.0->marker-pdf) (2025.1.31)
+Requirement already satisfied: httpcore==1.* in ./jfk-env-py310/lib/python3.10/site-packages (from httpx<1,>=0.23.0->anthropic<0.47.0,>=0.46.0->marker-pdf) (1.0.7)
+Requirement already satisfied: h11<0.15,>=0.13 in ./jfk-env-py310/lib/python3.10/site-packages (from httpcore==1.*->httpx<1,>=0.23.0->anthropic<0.47.0,>=0.46.0->marker-pdf) (0.14.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./jfk-env-py310/lib/python3.10/site-packages (from requests<3.0.0,>=2.28.1->google-genai<2.0.0,>=1.0.0->marker-pdf) (3.4.1)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./jfk-env-py310/lib/python3.10/site-packages (from requests<3.0.0,>=2.28.1->google-genai<2.0.0,>=1.0.0->marker-pdf) (1.26.20)
+Requirement already satisfied: MarkupSafe>=2.0.0rc2 in ./jfk-env-py310/lib/python3.10/site-packages (from jinja2->torch<3.0.0,>=2.5.1->marker-pdf) (3.0.2)
+Requirement already satisfied: pyasn1<0.7.0,>=0.4.6 in ./jfk-env-py310/lib/python3.10/site-packages (from pyasn1-modules>=0.2.1->google-auth<3.0.0,>=2.14.1->google-genai<2.0.0,>=1.0.0->marker-pdf) (0.6.1)
+  File "<string>", line 2
+    try:
+IndentationError: unexpected indent
+- 
+- PyTorch available (version 2.6.0)
+Marker API not available
+Could not import marker_pdf.api.Marker: No module named 'marker_pdf'
+- Marker bridge API available!
+
+Running JFK scraper with OCR enabled...
+Command: python jfk_scraper.py 
+
+Marker API not available
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:119] - ================================================================================
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:120] - JFK Files Scraper Starting
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:121] - Python version: 3.10.13 (main, Feb 16 2025, 16:16:37) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:122] - Platform: darwin
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:123] - Working directory: /Users/jonathannelson/Development/Projects/personal/jfk-files
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:124] - Log level: INFO
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:125] - ================================================================================
+2025-03-19 13:52:56 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:30] - Created output directories
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:119] - ================================================================================
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:120] - JFK Files Scraper Starting
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:121] - Python version: 3.10.13 (main, Feb 16 2025, 16:16:37) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:122] - Platform: darwin
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:123] - Working directory: /Users/jonathannelson/Development/Projects/personal/jfk-files
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:124] - Log level: INFO
+2025-03-19 13:52:56 - jfk_scraper - INFO - [logging_utils.py:125] - ================================================================================
+2025-03-19 13:52:56 - jfk_scraper.scrape - INFO - [scrape_utils.py:203] - Initializing web crawler with proper configuration
+2025-03-19 13:52:56 - jfk_scraper.scrape - INFO - [scrape_utils.py:212] - Using default total pages: 113
+[INIT].... → Crawl4AI 0.5.0.post4
+2025-03-19 13:52:57 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 1 of 113: https://www.archives.gov/research/jfk/release-2025?page=1
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.32s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.023s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.34s
+2025-03-19 13:52:58 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 1
+2025-03-19 13:52:58 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_1.pickle
+2025-03-19 13:52:59 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 2 of 113: https://www.archives.gov/research/jfk/release-2025?page=2
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.28s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.023s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.31s
+2025-03-19 13:53:00 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 2
+2025-03-19 13:53:00 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_2.pickle
+2025-03-19 13:53:01 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 3 of 113: https://www.archives.gov/research/jfk/release-2025?page=3
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.21s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.042s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.26s
+2025-03-19 13:53:02 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 3
+2025-03-19 13:53:02 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_3.pickle
+2025-03-19 13:53:03 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 4 of 113: https://www.archives.gov/research/jfk/release-2025?page=4
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.15s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.023s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.17s
+2025-03-19 13:53:04 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 4
+2025-03-19 13:53:04 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_4.pickle
+2025-03-19 13:53:04 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 5 of 113: https://www.archives.gov/research/jfk/release-2025?page=5
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.15s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.043s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.19s
+2025-03-19 13:53:06 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 5
+2025-03-19 13:53:06 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_5.pickle
+2025-03-19 13:53:06 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 6 of 113: https://www.archives.gov/research/jfk/release-2025?page=6
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.16s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.022s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.19s
+2025-03-19 13:53:08 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 6
+2025-03-19 13:53:08 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_6.pickle
+2025-03-19 13:53:08 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 7 of 113: https://www.archives.gov/research/jfk/release-2025?page=7
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.18s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.022s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.20s
+2025-03-19 13:53:10 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 7
+2025-03-19 13:53:10 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_7.pickle
+2025-03-19 13:53:10 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 8 of 113: https://www.archives.gov/research/jfk/release-2025?page=8
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.18s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.022s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.21s
+2025-03-19 13:53:12 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 8
+2025-03-19 13:53:12 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_8.pickle
+2025-03-19 13:53:13 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 9 of 113: https://www.archives.gov/research/jfk/release-2025?page=9
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.22s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.056s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.27s
+2025-03-19 13:53:14 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 9
+2025-03-19 13:53:14 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_9.pickle
+2025-03-19 13:53:15 - jfk_scraper.scrape - INFO - [scrape_utils.py:165] - Progress checkpoint: 9/113 pages, 90 PDF files
+2025-03-19 13:53:15 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_progress.pickle
+2025-03-19 13:53:15 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 10 of 113: https://www.archives.gov/research/jfk/release-2025?page=10
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.22s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.023s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.24s
+2025-03-19 13:53:16 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 10
+2025-03-19 13:53:16 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_10.pickle
+2025-03-19 13:53:17 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 11 of 113: https://www.archives.gov/research/jfk/release-2025?page=11
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.27s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.023s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.30s
+2025-03-19 13:53:18 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 11
+2025-03-19 13:53:18 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_11.pickle
+2025-03-19 13:53:19 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 12 of 113: https://www.archives.gov/research/jfk/release-2025?page=12
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.20s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.023s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.22s
+2025-03-19 13:53:21 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 12
+2025-03-19 13:53:21 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_12.pickle
+2025-03-19 13:53:22 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 13 of 113: https://www.archives.gov/research/jfk/release-2025?page=13
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.26s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.024s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.29s
+2025-03-19 13:53:23 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 13
+2025-03-19 13:53:23 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_13.pickle
+2025-03-19 13:53:24 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 14 of 113: https://www.archives.gov/research/jfk/release-2025?page=14
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 2.13s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.023s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 2.15s
+2025-03-19 13:53:26 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 14
+2025-03-19 13:53:26 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_14.pickle
+2025-03-19 13:53:28 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 15 of 113: https://www.archives.gov/research/jfk/release-2025?page=15
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.24s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.024s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.27s
+2025-03-19 13:53:29 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 15
+2025-03-19 13:53:29 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_15.pickle
+2025-03-19 13:53:30 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 16 of 113: https://www.archives.gov/research/jfk/release-2025?page=16
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.19s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.024s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.22s
+2025-03-19 13:53:31 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 16
+2025-03-19 13:53:31 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_16.pickle
+2025-03-19 13:53:33 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 17 of 113: https://www.archives.gov/research/jfk/release-2025?page=17
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 2.16s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.023s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 2.19s
+2025-03-19 13:53:35 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 17
+2025-03-19 13:53:35 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_17.pickle
+2025-03-19 13:53:36 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 18 of 113: https://www.archives.gov/research/jfk/release-2025?page=18
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 2.15s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.023s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 2.18s
+2025-03-19 13:53:38 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 18
+2025-03-19 13:53:38 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_18.pickle
+2025-03-19 13:53:40 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 19 of 113: https://www.archives.gov/research/jfk/release-2025?page=19
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 2.18s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.023s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 2.20s
+2025-03-19 13:53:42 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 19
+2025-03-19 13:53:42 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_19.pickle
+2025-03-19 13:53:43 - jfk_scraper.scrape - INFO - [scrape_utils.py:165] - Progress checkpoint: 19/113 pages, 190 PDF files
+2025-03-19 13:53:43 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_progress.pickle
+2025-03-19 13:53:43 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 20 of 113: https://www.archives.gov/research/jfk/release-2025?page=20
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.20s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.022s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.23s
+2025-03-19 13:53:45 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 20
+2025-03-19 13:53:45 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_20.pickle
+2025-03-19 13:53:46 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 21 of 113: https://www.archives.gov/research/jfk/release-2025?page=21
+[FETCH]... ↓ https://www.archives.gov/research/jfk/release-2025... | Status: True | Time: 1.21s
+[SCRAPE].. ◆ https://www.archives.gov/research/jfk/release-2025... | Time: 0.023s
+[COMPLETE] ● https://www.archives.gov/research/jfk/release-2025... | Status: True | Total: 1.23s
+2025-03-19 13:53:47 - jfk_scraper.scrape - INFO - [scrape_utils.py:139] - Found 10 PDF files on page 21
+2025-03-19 13:53:47 - jfk_scraper.checkpoint - INFO - [checkpoint_utils.py:73] - Checkpoint saved to .checkpoints/scrape_page_21.pickle
+2025-03-19 13:53:49 - jfk_scraper.scrape - INFO - [scrape_utils.py:133] - Scraping page 22 of 113: https://www.archives.gov/research/jfk/release-2025?page=22

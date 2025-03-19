@@ -1,0 +1,44 @@
+# Web scraping and HTTP
+crawl4ai>=0.5.0
+requests>=2.26.0
+beautifulsoup4>=4.10.0
+
+# PDF processing
+PyMuPDF>=1.19.0     # Provides 'fitz' module for PDF processing
+pymupdf-fonts>=1.0.0  # Extra fonts for PyMuPDF
+pypdfium2>=4.16.0   # Alternative PDF library
+
+# OCR and PDF to Markdown
+pytesseract>=0.3.10 # OCR for scanned documents
+pdf2image>=1.17.0   # PDF to image conversion for OCR
+pdfplumber>=0.7.0   # Alternative PDF extraction tool for fallback
+backoff>=2.0.0      # For rate limiting handling in pdf2md
+openai>=1.0.0       # Used by pdf2md (optional, for GPT-based PDF conversion)
+Pillow>=10.0.0      # For image handling in pdf2md
+
+# Data processing
+pandas>=1.3.0
+numpy>=1.20.0
+
+# JSON processing
+jsonschema>=4.0.0
+
+# Visualization and monitoring
+matplotlib>=3.5.0
+psutil>=5.9.0
+tqdm>=4.64.0 # Progress bars
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=3.0.0
+
+# Machine learning dependencies
+torch>=1.10.0       
+torchvision>=0.11.0 
+transformers>=4.16.0
+nltk>=3.6.0 # Text processing
+
+# System utilities
+faust-cchardet>=2.1.19  # Maintained fork compatible with Python 3.11
+chardet>=4.0.0 # Character detection
+ftfy>=6.1.1 # Text cleanup

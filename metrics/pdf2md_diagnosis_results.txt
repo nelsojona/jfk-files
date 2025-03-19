@@ -1,0 +1,19 @@
+=== PDF2MD Diagnostic Results ===
+
+System: Darwin 24.3.0 (arm64)
+Python: 3.10.13 ✅
+
+Packages:
+- torch: ✅
+- fitz: ✅
+- numpy: ✅
+- PIL: ✅
+- pytesseract: ✅
+- PyMuPDF: ✅
+
+PDF2MD Wrapper: ✅ Loaded
+Tesseract OCR: ✅ tesseract 5.5.0
+GPU Support: ❌ Not available
+
+Overall Status: ✅ Ready to use
+PDF2MD wrapper is available with OCR capabilities
